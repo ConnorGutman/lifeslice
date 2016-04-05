@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: sketchtool 3.5.1 (25234) - http://www.bohemiancoding.com/sketch -->
+    <title>B8135BFF-38A9-4603-B731-BDEEE405E4E9</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="lifeslicewebbie" sketch:type="MSArtboardGroup" transform="translate(-765.000000, -1468.000000)">
+            <g id="icon-chat" sketch:type="MSLayerGroup" transform="translate(765.000000, 1468.000000)">
+                <circle id="Oval-1-Copy-5" fill="#6CB2D8" sketch:type="MSShapeGroup" cx="30" cy="30" r="30"></circle>
+                <g id="chat-bubbles-square" transform="translate(18.000000, 18.000000)" sketch:type="MSShapeGroup">
+                    <g id="Group">
+                        <g id="Frame_-_24px" transform="translate(1.000000, 0.000000)">
+                            <rect id="Rectangle-path" x="0" y="0" width="24" height="24"></rect>
+                        </g>
+                        <g id="Line_Icons" transform="translate(0.000000, 2.000000)" fill="#FFFFFF">
+                            <g id="Group">
+                                <path d="M21.998,22 L16.664,18 L13.498,18 C12.671,18 11.998,17.327 11.998,16.5 L11.998,9.5 C11.998,8.673 12.671,8 13.498,8 L23.498,8 C24.325,8 24.998,8.673 24.998,9.5 L24.998,16.5 C24.998,17.327 24.325,18 23.498,18 L21.998,18 L21.998,22 L21.998,22 Z M13.998,16 L17.332,16 L19.998,18 L19.998,16 L22.998,16 L22.998,10 L13.998,10 L13.998,16 L13.998,16 Z" id="Shape"></path>
+                                <path d="M3.998,18 L3.998,14 L2.498,14 C1.671,14 0.998,13.327 0.998,12.5 L0.998,1.5 C0.998,0.673 1.671,0 2.498,0 L15.498,0 C16.325,0 16.998,0.673 16.998,1.5 L16.998,5.998 L14.998,5.998 L14.998,2 L2.998,2 L2.998,12 L5.998,12 L5.998,14 L8.664,12 L9.998,12 L9.998,14 L9.332,14 L3.998,18 L3.998,18 Z" id="Shape"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

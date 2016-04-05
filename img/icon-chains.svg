@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: sketchtool 3.5.1 (25234) - http://www.bohemiancoding.com/sketch -->
+    <title>C7EA737A-6586-40BD-BEDF-608D5F2BE2B3</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="lifeslicewebbie" sketch:type="MSArtboardGroup" transform="translate(-365.000000, -1308.000000)">
+            <g id="icon-chains" sketch:type="MSLayerGroup" transform="translate(365.000000, 1308.000000)">
+                <circle id="Oval-1-Copy" fill="#6CB2D8" sketch:type="MSShapeGroup" cx="30" cy="30" r="30"></circle>
+                <g id="link" transform="translate(18.000000, 18.000000)" sketch:type="MSShapeGroup">
+                    <g id="Group">
+                        <g id="Frame_-_24px">
+                            <rect id="Rectangle-path" x="0" y="0" width="24" height="24"></rect>
+                        </g>
+                        <g id="Line_Icons" transform="translate(1.000000, 1.000000)" fill="#FFFFFF">
+                            <g id="Group">
+                                <g id="Shape">
+                                    <path d="M2.514,15.227 L3.928,13.813 L3.221,13.106 C2.831,12.716 2.831,12.082 3.221,11.691 L11.707,3.206 C11.895,3.017 12.146,2.913 12.414,2.913 C12.682,2.913 12.932,3.017 13.122,3.206 L13.829,3.913 L15.242,2.5 L14.536,1.793 C13.402,0.659 11.425,0.659 10.293,1.793 L1.808,10.277 C0.638,11.447 0.638,13.35 1.808,14.52 L2.514,15.227 L2.514,15.227 Z"></path>
+                                    <path d="M20.192,7.451 L19.484,6.744 L18.07,8.158 L18.778,8.865 C18.967,9.054 19.07,9.304 19.07,9.572 C19.07,9.838 18.966,10.089 18.778,10.278 L10.293,18.764 C9.915,19.141 9.256,19.141 8.878,18.764 L8.171,18.057 L6.757,19.47 L7.464,20.177 C8.031,20.744 8.784,21.056 9.586,21.056 C10.387,21.056 11.14,20.744 11.707,20.177 L20.192,11.692 C20.758,11.126 21.07,10.373 21.07,9.572 C21.07,8.771 20.758,8.017 20.192,7.451 L20.192,7.451 Z"></path>
+                                </g>
+                                <rect id="Rectangle-path" transform="translate(15.948782, 6.035593) rotate(45.000000) translate(-15.948782, -6.035593) " x="14.9487919" y="1.03564145" width="1.99998082" height="9.9999041"></rect>
+                                <rect id="Rectangle-path" transform="translate(6.049215, 15.933975) rotate(44.991897) translate(-6.049215, -15.933975) " x="5.04972448" y="10.9335228" width="1.99898085" height="10.0009042"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
