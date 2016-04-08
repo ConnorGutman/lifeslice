@@ -2,7 +2,10 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  background-image: url("../img/bg.svg");
+  background-size: cover;
+  background-position: center; }
 
 h1,
 h2,
@@ -56,7 +59,8 @@ p {
     .rectangle {
       display: block;
       margin-left: auto;
-      margin-right: auto; } }
+      margin-right: auto;
+      width: 90%; } }
 
 .rectangle-subfocus {
   display: none; }
@@ -70,10 +74,13 @@ p {
     margin: 40px 30px 0 !important; } }
 .rectangle-focus {
   display: inline-block !important;
-  width: 20%;
+  width: 90%;
   border-radius: 5px !important;
   opacity: 0.9;
   background-color: #6cb2d8; }
+  @media (min-width: 768px) {
+    .rectangle-focus {
+      width: 25%; } }
 
 .rectangle-highlights {
   border-radius: 5px !important; }
@@ -127,7 +134,7 @@ nav {
     background-repeat: repeat-x;
     background-color: #f7f7f7; }
   #highlights .highlights-content {
-    padding-top: 5vh; }
+    padding: 5vh 0; }
     @media (min-width: 768px) {
       #highlights .highlights-content .points-A {
         padding-right: 0; }
@@ -144,6 +151,9 @@ nav {
   background-color: #ffffff; }
   #discover .col-sm-8 {
     padding: 0 15%; }
+  @media (min-width: 768px) {
+    #discover h1 {
+      padding-top: 10vh; } }
   #discover h1 span {
     color: #e67e22; }
   #discover hr {
@@ -163,6 +173,9 @@ nav {
   @media (min-width: 768px) {
     #share .col-sm-4 .rectangle {
       float: right; } }
+  @media (min-width: 768px) {
+    #share h1 {
+      padding-top: 10vh; } }
   #share h1 span {
     color: #6cb2d8; }
   #share hr {
@@ -175,9 +188,13 @@ nav {
       text-align: justify !important; } }
 
 #create {
+  padding: 10vh 0 0;
   background-color: #ffffff; }
   #create .col-sm-8 {
     padding: 0 15%; }
+  @media (min-width: 768px) {
+    #create h1 {
+      padding-top: 10vh; } }
   #create h1 span {
     color: #e67e22; }
   #create hr {
@@ -193,5 +210,22 @@ nav {
   background-color: #f7f7f7; }
   #download h1 span {
     color: #6cb2d8; }
+  #download .movie-strip {
+    height: 4vh;
+    background-image: url("../img/inverted-rectangle.svg");
+    background-size: contain;
+    background-repeat: repeat-x; }
+  #download .strip-top {
+    margin-top: -4vh; }
+  #download .strip-bottom {
+    margin-top: 3.5vh;
+    z-index: 1; }
+
+.footer {
+  width: 100%;
+  padding: 0;
+  height: 20vh;
+  background-color: #6cb2d8;
+  margin-top: -4vh; }
 
 /*# sourceMappingURL=stylesheet.css.map */
