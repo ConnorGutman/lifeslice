@@ -26,6 +26,10 @@ p {
   font-size: 0.75em;
   color: #9b9b9b; }
 
+@media (min-width: 768px) {
+  .rbr {
+    display: block; } }
+
 .bg {
   position: absolute;
   top: 0;
@@ -47,7 +51,10 @@ p {
   background: url("../img/bg-create.svg"); }
 
 .rectangle-group {
-  margin: 60px 0; }
+  margin: 30px 0; }
+  @media (min-width: 768px) {
+    .rectangle-group {
+      margin: 60px 0; } }
 
 .rectangle {
   width: 270px;
@@ -71,7 +78,7 @@ p {
     width: 20%;
     height: 400px !important;
     border-radius: 5px !important;
-    margin: 40px 30px 0 !important; } }
+    margin: 40px 30px 20px !important; } }
 .rectangle-focus {
   display: inline-block !important;
   width: 90%;
@@ -94,6 +101,13 @@ nav {
   @media (min-width: 768px) {
     nav .navbar-brand {
       margin-left: 50px; } }
+  @media (max-width: 768px) {
+    nav .navbar-brand #logo {
+      position: absolute;
+      display: block;
+      left: 0;
+      right: 0;
+      margin: auto; } }
   nav .navbar-facebook {
     margin-right: 11px; }
     @media (max-width: 768px) {
@@ -113,19 +127,29 @@ nav {
   z-index: 2;
   opacity: 1; }
 
-#intro h1 span {
-  color: #6cb2d8; }
+#intro h1 {
+  margin-top: 2vh; }
+  @media (min-width: 768px) {
+    #intro h1 {
+      margin-top: 0; } }
+  #intro h1 .colorful {
+    color: #6cb2d8; }
+@media (max-width: 768px) {
+  #intro p {
+    padding: 0 5%; } }
 
 #highlights {
   background-color: #f7f7f7; }
   #highlights h2 {
     color: #6cb2d8;
     text-transform: uppercase; }
+    @media (max-width: 768px) {
+      #highlights h2 {
+        padding-top: 2vh; } }
   #highlights p {
     color: #9b9b9b; }
     @media (max-width: 768px) {
       #highlights p {
-        text-align: justify;
         padding: 0 10%; } }
   #highlights .movie-strip {
     height: 4vh;
@@ -135,26 +159,38 @@ nav {
     background-color: #f7f7f7; }
   #highlights .highlights-content {
     padding: 5vh 0; }
+    #highlights .highlights-content .points-A .col-sm-2 img {
+      margin-top: 2vh; }
     @media (min-width: 768px) {
       #highlights .highlights-content .points-A {
         padding-right: 0; }
         #highlights .highlights-content .points-A .col-sm-2 {
-          padding: 0; } }
+          padding: 0; }
+          #highlights .highlights-content .points-A .col-sm-2 img {
+            margin-top: 0; } }
+    @media (max-width: 768px) {
+      #highlights .highlights-content .points-B {
+        padding-top: 5vh; } }
+    #highlights .highlights-content .points-B .col-sm-2 img {
+      margin-top: 2vh; }
     @media (min-width: 768px) {
       #highlights .highlights-content .points-B {
         padding-left: 0; }
         #highlights .highlights-content .points-B .col-sm-2 {
-          padding: 0; } }
+          padding: 0; }
+          #highlights .highlights-content .points-B .col-sm-2 img {
+            margin-top: 0; } }
 
 #discover {
   padding: 10vh 0 0;
   background-color: #ffffff; }
-  #discover .col-sm-8 {
-    padding: 0 15%; }
+  @media (min-width: 768px) {
+    #discover .col-sm-8 {
+      padding: 0 15%; } }
   @media (min-width: 768px) {
     #discover h1 {
       padding-top: 10vh; } }
-  #discover h1 span {
+  #discover h1 .colorful {
     color: #e67e22; }
   #discover hr {
     border-color: #e67e22; }
@@ -168,15 +204,16 @@ nav {
 #share {
   padding: 10vh 0 0;
   background-color: #f7f7f7; }
-  #share .col-sm-8 {
-    padding: 0 15%; }
+  @media (min-width: 768px) {
+    #share .col-sm-8 {
+      padding: 0 15%; } }
   @media (min-width: 768px) {
     #share .col-sm-4 .rectangle {
       float: right; } }
   @media (min-width: 768px) {
     #share h1 {
       padding-top: 10vh; } }
-  #share h1 span {
+  #share h1 .colorful {
     color: #6cb2d8; }
   #share hr {
     border-color: #6cb2d8; }
@@ -190,12 +227,13 @@ nav {
 #create {
   padding: 10vh 0 0;
   background-color: #ffffff; }
-  #create .col-sm-8 {
-    padding: 0 15%; }
+  @media (min-width: 768px) {
+    #create .col-sm-8 {
+      padding: 0 15%; } }
   @media (min-width: 768px) {
     #create h1 {
       padding-top: 10vh; } }
-  #create h1 span {
+  #create h1 .colorful {
     color: #e67e22; }
   #create hr {
     border-color: #e67e22; }
@@ -208,8 +246,17 @@ nav {
 
 #download {
   background-color: #f7f7f7; }
-  #download h1 span {
+  #download h1 .colorful {
     color: #6cb2d8; }
+    @media (max-width: 768px) {
+      #download h1 .colorful {
+        display: none; } }
+  @media (max-width: 768px) {
+    #download h1 .between-text {
+      display: none; } }
+  @media (min-width: 768px) {
+    #download h1 .between-text-capital {
+      display: none; } }
   #download .movie-strip {
     height: 4vh;
     background-image: url("../img/inverted-rectangle.svg");
@@ -218,14 +265,37 @@ nav {
   #download .strip-top {
     margin-top: -4vh; }
   #download .strip-bottom {
-    margin-top: 3.5vh;
+    margin-top: 3vh;
     z-index: 1; }
+  #download .download-content {
+    padding: 10vh 10%; }
+    #download .download-content img {
+      padding: 40px 0; }
 
-.footer {
-  width: 100%;
-  padding: 0;
-  height: 20vh;
-  background-color: #6cb2d8;
-  margin-top: -4vh; }
+#footer {
+  background-image: linear-gradient(282deg, #afd5ea, #6cb2d8);
+  margin-top: -3vh;
+  padding: 8vh 2% 5vh; }
+  #footer p {
+    color: #ffffff;
+    font-size: 0.6em; }
+  #footer .copyright {
+    display: inline-block;
+    vertical-align: middle; }
+  #footer .footer-nav {
+    padding: 0 10%; }
+    #footer .footer-nav p {
+      line-height: 0.5; }
+    #footer .footer-nav .footer-title {
+      font-size: 0.75em;
+      font-weight: 700; }
+    #footer .footer-nav .legal {
+      text-align: right; }
+    #footer .footer-nav .apps {
+      text-align: right; }
+    #footer .footer-nav .company {
+      text-align: right; }
+  #footer .social .twitter-footer {
+    margin-right: 9px; }
 
 /*# sourceMappingURL=stylesheet.css.map */

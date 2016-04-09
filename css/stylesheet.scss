@@ -26,6 +26,11 @@ p {
   font-size: 0.75em;
   color: #9b9b9b;
 }
+.rbr {
+  @media (min-width: 768px) {
+    display: block;
+  }
+}
 .bg {
   position: absolute;
   top: 0;
@@ -47,7 +52,10 @@ p {
   background: url('../img/bg-create.svg');
 }
 .rectangle-group {
-  margin: 60px 0;
+  margin: 30px 0;
+  @media (min-width: 768px) {
+    margin: 60px 0;
+  }
 }
 .rectangle {
   width: 270px;
@@ -71,7 +79,7 @@ p {
     width: 20%;
     height: 400px !important;
     border-radius: 5px !important;
-    margin: 40px 30px 0 !important;
+    margin: 40px 30px 20px !important;
   }
 }
 .rectangle-focus {
@@ -96,6 +104,15 @@ nav {
   .navbar-brand {
     @media (min-width: 768px) {
       margin-left: 50px;
+    }
+    #logo {
+      @media (max-width: 768px) {
+        position: absolute;
+        display: block;
+        left: 0;
+        right: 0;
+        margin: auto;
+      }
     }
   }
   .navbar-facebook {
@@ -124,8 +141,17 @@ nav {
 #intro {
   //background-color: #ffffff;
   h1 {
-    span {
+    margin-top: 2vh;
+    @media (min-width: 768px) {
+      margin-top: 0;
+    }
+    .colorful {
       color: #6cb2d8;
+    }
+  }
+  p {
+    @media (max-width: 768px) {
+      padding: 0 5%;
     }
   }
 }
@@ -134,11 +160,13 @@ nav {
   h2 {
     color: #6cb2d8;
     text-transform: uppercase;
+    @media (max-width: 768px) {
+      padding-top: 2vh;
+    }
   }
   p {
     color: #9b9b9b;
     @media (max-width: 768px) {
-      text-align: justify;
       padding: 0 10%;
     }
   }
@@ -152,18 +180,37 @@ nav {
   .highlights-content {
     padding: 5vh 0;
     .points-A {
+      .col-sm-2 {
+        img {
+          margin-top: 2vh;
+        }
+      }
       @media (min-width: 768px) {
         padding-right: 0;
         .col-sm-2 {
           padding: 0;
+          img {
+            margin-top: 0;
+          }
         }
       }
     }
     .points-B {
+      @media (max-width: 768px) {
+        padding-top: 5vh;
+      }
+      .col-sm-2 {
+        img {
+          margin-top: 2vh;
+        }
+      }
       @media (min-width: 768px) {
         padding-left: 0;
         .col-sm-2 {
           padding: 0;
+          img {
+            margin-top: 0;
+          }
         }
       }
     }
@@ -173,13 +220,15 @@ nav {
   padding: 10vh 0 0;
   background-color: #ffffff;
   .col-sm-8 {
-    padding: 0 15%;
+    @media (min-width: 768px) {
+      padding: 0 15%;
+    }
   }
   h1 {
     @media (min-width: 768px) {
       padding-top: 10vh;
     }
-    span {
+    .colorful {
       color: #e67e22;
     }
   }
@@ -199,7 +248,9 @@ nav {
   padding: 10vh 0 0;
   background-color: #f7f7f7;
   .col-sm-8 {
-    padding: 0 15%;
+    @media (min-width: 768px) {
+      padding: 0 15%;
+    }
   }
   .col-sm-4 {
     .rectangle {
@@ -212,7 +263,7 @@ nav {
     @media (min-width: 768px) {
       padding-top: 10vh;
     }
-    span {
+    .colorful {
       color: #6cb2d8;
     }
   }
@@ -232,13 +283,15 @@ nav {
   padding: 10vh 0 0;
   background-color: #ffffff;
   .col-sm-8 {
-    padding: 0 15%;
+    @media (min-width: 768px) {
+      padding: 0 15%;
+    }
   }
   h1 {
     @media (min-width: 768px) {
       padding-top: 10vh;
     }
-    span {
+    .colorful {
       color: #e67e22;
     }
   }
@@ -257,8 +310,21 @@ nav {
 #download {
   background-color: #f7f7f7;
   h1 {
-    span {
+    .colorful {
       color: #6cb2d8;
+      @media (max-width: 768px) {
+        display: none;
+      }
+    }
+    .between-text {
+      @media (max-width: 768px) {
+        display: none;
+      }
+    }
+    .between-text-capital {
+      @media (min-width: 768px) {
+        display: none;
+      }
     }
   }
   .movie-strip {
@@ -271,14 +337,50 @@ nav {
     margin-top: -4vh;
   }
   .strip-bottom {
-    margin-top: 3.5vh;
+    margin-top: 3vh;
     z-index: 1;
   }
+  .download-content {
+    padding: 10vh 10%;
+    img {
+      padding: 40px 0;
+    }
+  }
 }
-.footer {
-  width: 100%;
-  padding: 0;
-  height: 20vh;
-  background-color: #6cb2d8;
-  margin-top: -4vh;
+#footer {
+  background-image: linear-gradient(282deg, #afd5ea, #6cb2d8);
+  margin-top: -3vh;
+  padding: 8vh 2% 5vh;
+  p {
+    color: #ffffff;
+    font-size: 0.6em;
+  }
+  .copyright {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .footer-nav {
+    padding: 0 10%;
+    p {
+      line-height: 0.5;
+    }
+    .footer-title {
+      font-size: 0.75em;
+      font-weight: 700;
+    }
+    .legal {
+      text-align: right;
+    }
+    .apps {
+      text-align: right;
+    }
+    .company {
+      text-align: right;
+    }
+  }
+  .social {
+    .twitter-footer {
+      margin-right: 9px;
+    }
+  }
 }
