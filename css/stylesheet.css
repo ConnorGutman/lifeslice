@@ -61,7 +61,7 @@ p {
   height: 480px;
   border-radius: 5px 5px 0 0;
   background-color: #eeeeee;
-  box-shadow: 0 2px 4px 0 rgba(170, 170, 170, 0.5); }
+  box-shadow: 0 0px 4px 0 rgba(170, 170, 170, 0.5); }
   @media (max-width: 768px) {
     .rectangle {
       display: block;
@@ -78,19 +78,24 @@ p {
     width: 20%;
     height: 400px !important;
     border-radius: 5px !important;
-    margin: 40px 30px 20px !important; } }
+    margin: 40px 30px 20px !important;
+    box-shadow: 0 2px 4px 0 rgba(170, 170, 170, 0.5) !important; } }
 .rectangle-focus {
   display: inline-block !important;
   width: 90%;
   border-radius: 5px !important;
   opacity: 0.9;
-  background-color: #6cb2d8; }
+  background-color: #6cb2d8;
+  box-shadow: 0 2px 4px 0 rgba(170, 170, 170, 0.5) !important; }
   @media (min-width: 768px) {
     .rectangle-focus {
       width: 25%; } }
 
 .rectangle-highlights {
   border-radius: 5px !important; }
+
+.rectangle-strip {
+  margin-bottom: 5px !important; }
 
 hr {
   width: 50px;
@@ -163,26 +168,45 @@ nav {
       margin-top: 2vh; }
     @media (min-width: 768px) {
       #highlights .highlights-content .points-A {
+        padding-top: 35px;
         padding-right: 0; }
         #highlights .highlights-content .points-A .col-sm-2 {
           padding: 0; }
           #highlights .highlights-content .points-A .col-sm-2 img {
-            margin-top: 0; } }
-    @media (max-width: 768px) {
-      #highlights .highlights-content .points-B {
-        padding-top: 5vh; } }
-    #highlights .highlights-content .points-B .col-sm-2 img {
-      margin-top: 2vh; }
-    @media (min-width: 768px) {
-      #highlights .highlights-content .points-B {
-        padding-left: 0; }
-        #highlights .highlights-content .points-B .col-sm-2 {
-          padding: 0; }
-          #highlights .highlights-content .points-B .col-sm-2 img {
-            margin-top: 0; } }
+            margin-top: 0; }
+        #highlights .highlights-content .points-A .col-sm-10 {
+          padding-top: 2.5vh; }
+          #highlights .highlights-content .points-A .col-sm-10 h2 {
+            font-size: 0.9em; }
+          #highlights .highlights-content .points-A .col-sm-10 p {
+            font-size: 0.6em;
+            padding-left: 8%; } }
+    #highlights .highlights-content .points-B {
+      padding-top: 35px; }
+      @media (max-width: 768px) {
+        #highlights .highlights-content .points-B {
+          padding-top: 5vh; } }
+      #highlights .highlights-content .points-B .col-sm-2 img {
+        margin-top: 2vh; }
+      @media (min-width: 768px) {
+        #highlights .highlights-content .points-B {
+          padding-left: 0; }
+          #highlights .highlights-content .points-B .col-sm-2 {
+            padding: 0; }
+            #highlights .highlights-content .points-B .col-sm-2 img {
+              margin-top: 0; }
+          #highlights .highlights-content .points-B .col-sm-10 {
+            padding-top: 2.5vh; }
+            #highlights .highlights-content .points-B .col-sm-10 h2 {
+              font-size: 0.9em; }
+            #highlights .highlights-content .points-B .col-sm-10 p {
+              font-size: 0.6em;
+              padding-right: 8%; } }
 
 #discover {
   padding: 10vh 0 0;
+  background-image: url("../img/bg-discover.svg");
+  background-size: cover;
   background-color: #ffffff; }
   @media (min-width: 768px) {
     #discover .col-sm-8 {
@@ -202,7 +226,7 @@ nav {
       text-align: justify !important; } }
 
 #share {
-  padding: 10vh 0 0;
+  padding: 15vh 0 0;
   background-color: #f7f7f7; }
   @media (min-width: 768px) {
     #share .col-sm-8 {
@@ -210,6 +234,10 @@ nav {
   @media (min-width: 768px) {
     #share .col-sm-4 .rectangle {
       float: right; } }
+  #share .col-sm-4 #icons-share {
+    position: absolute;
+    top: -10vh;
+    left: 60%; }
   @media (min-width: 768px) {
     #share h1 {
       padding-top: 10vh; } }

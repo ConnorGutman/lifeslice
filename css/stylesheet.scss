@@ -62,7 +62,7 @@ p {
   height: 480px;
   border-radius: 5px 5px 0 0;
   background-color: #eeeeee;
-  box-shadow: 0 2px 4px 0 rgba(170, 170, 170, 0.5);
+  box-shadow: 0 0px 4px 0 rgba(170, 170, 170, 0.5);
   @media (max-width: 768px) {
     display: block;
     margin-left: auto;
@@ -80,6 +80,7 @@ p {
     height: 400px !important;
     border-radius: 5px !important;
     margin: 40px 30px 20px !important;
+    box-shadow: 0 2px 4px 0 rgba(170, 170, 170, 0.5) !important;
   }
 }
 .rectangle-focus {
@@ -88,12 +89,16 @@ p {
   border-radius: 5px !important;
   opacity: 0.9;
   background-color: #6cb2d8;
+  box-shadow: 0 2px 4px 0 rgba(170, 170, 170, 0.5) !important;
   @media (min-width: 768px) {
     width: 25%;
   }
 }
 .rectangle-highlights {
   border-radius: 5px !important;
+}
+.rectangle-strip {
+  margin-bottom: 5px !important;
 }
 hr {
   width: 50px;
@@ -186,6 +191,7 @@ nav {
         }
       }
       @media (min-width: 768px) {
+        padding-top: 35px;
         padding-right: 0;
         .col-sm-2 {
           padding: 0;
@@ -193,9 +199,20 @@ nav {
             margin-top: 0;
           }
         }
+        .col-sm-10 {
+          padding-top: 2.5vh;
+          h2 {
+            font-size: 0.9em;
+          }
+          p {
+            font-size: 0.6em;
+            padding-left: 8%;
+          }
+        }
       }
     }
     .points-B {
+      padding-top: 35px;
       @media (max-width: 768px) {
         padding-top: 5vh;
       }
@@ -212,12 +229,24 @@ nav {
             margin-top: 0;
           }
         }
+        .col-sm-10 {
+          padding-top: 2.5vh;
+          h2 {
+            font-size: 0.9em;
+          }
+          p {
+            font-size: 0.6em;
+            padding-right: 8%;
+          }
+        }
       }
     }
   }
 }
 #discover {
   padding: 10vh 0 0;
+  background-image: url('../img/bg-discover.svg');
+  background-size: cover;
   background-color: #ffffff;
   .col-sm-8 {
     @media (min-width: 768px) {
@@ -245,7 +274,7 @@ nav {
   }
 }
 #share {
-  padding: 10vh 0 0;
+  padding: 15vh 0 0;
   background-color: #f7f7f7;
   .col-sm-8 {
     @media (min-width: 768px) {
@@ -257,6 +286,11 @@ nav {
       @media (min-width: 768px) {
         float: right;
       }
+    }
+    #icons-share {
+      position: absolute;
+      top: -10vh;
+      left: 60%;
     }
   }
   h1 {
