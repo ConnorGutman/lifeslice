@@ -57,11 +57,11 @@ p {
       margin: 60px 0; } }
 
 .rectangle {
-  width: 270px;
+  width: 70%;
   height: 480px;
   border-radius: 5px 5px 0 0;
   background-color: #eeeeee;
-  box-shadow: 0 0px 4px 0 rgba(170, 170, 170, 0.5); }
+  box-shadow: 0 0 4px 0 rgba(170, 170, 170, 0.5); }
   @media (max-width: 768px) {
     .rectangle {
       display: block;
@@ -238,6 +238,11 @@ nav {
     position: absolute;
     top: -10vh;
     left: 60%; }
+    @media (max-width: 768px) {
+      #share .col-sm-4 #icons-share {
+        width: 80%;
+        top: -5vh;
+        left: 12%; } }
   @media (min-width: 768px) {
     #share h1 {
       padding-top: 10vh; } }
@@ -308,8 +313,15 @@ nav {
     color: #ffffff;
     font-size: 0.6em; }
   #footer .copyright {
+    margin-top: 5vh;
     display: inline-block;
     vertical-align: middle; }
+    @media (max-width: 768px) {
+      #footer .copyright img {
+        display: table-cell;
+        left: 0;
+        right: 0;
+        margin: 0 auto 15px; } }
   #footer .footer-nav {
     padding: 0 10%; }
     #footer .footer-nav p {
@@ -317,13 +329,16 @@ nav {
     #footer .footer-nav .footer-title {
       font-size: 0.75em;
       font-weight: 700; }
-    #footer .footer-nav .legal {
-      text-align: right; }
-    #footer .footer-nav .apps {
-      text-align: right; }
-    #footer .footer-nav .company {
-      text-align: right; }
-  #footer .social .twitter-footer {
-    margin-right: 9px; }
+  #footer .social {
+    margin-top: 5vh; }
+    @media (max-width: 768px) {
+      #footer .social img {
+        display: table-cell;
+        float: none !important;
+        left: 0;
+        right: 0;
+        margin: auto !important; } }
+    #footer .social .twitter-footer {
+      margin-right: 9px; }
 
 /*# sourceMappingURL=stylesheet.css.map */
